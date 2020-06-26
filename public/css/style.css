@@ -1,0 +1,301 @@
+html{
+  scroll-behavior: smooth;
+
+}
+#contact{
+   height: 500px;
+}
+#event{
+   height: 300px;
+}
+#about{
+   height: 500px;
+}
+a{
+  text-decoration: none;
+}
+body{
+  margin-left: 0px;
+}
+.space{
+  line-height: 2.3;
+}
+/* Please Ensure That you go through every comment properly and carefully before messing with any code
+Every block of code was wrapped with a comment for better understanding of the code.
+*/
+
+/* The styling here affect every anchor(a) element in the page except for some few places */
+a {
+  color: white !important;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+}
+/* ..........  */
+
+
+
+
+/* The anchor(a) element was changed to black here because, my navbar has a white background
+The anchor(a) element here is the one at the navbar
+*/
+div#collapsibleNavbar ul li a {
+  color: black !important;
+}
+
+div#collapsibleNavbar ul li a:hover {
+  color: purple !important;
+  border-bottom: 2px solid purple !important;
+}
+
+div#collapsibleNavbar ul li a.active, li.events a.active {
+  color: purple !important;
+  border-bottom: 2px solid purple !important;
+}
+/* .......... */
+
+
+/* Probably you've seen that the navbar has a grey color line under it, that was done here and the reason for
+the background-color is because without it the navbar will be transparent */
+nav.topnav {
+  box-shadow: 2px 2px 2px lightgrey;
+  background-color: white;
+}
+/* .......... */
+
+
+
+
+
+
+footer {
+  background-color: #f5f5f5;
+  padding: 30px;
+}
+
+footer h4 {
+  font-size: 18px;
+  color: darkgrey;
+}
+
+
+/* Social Media Handle Stylings */
+i.fa-facebook {
+  border-radius: 15px;
+  background-color: blue;
+  padding: 10px 12px;
+  margin-right: 20px;
+}
+
+i.fa-twitter {
+  border-radius: 15px;
+  background-color: skyblue;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+i.fa-instagram {
+  border-radius: 15px;
+  background-color: red;
+  padding: 10px;
+}
+/* .......... */
+
+
+/* Small Screen for navbar */
+@media (max-width: 575px), (max-width: 991px) {
+  nav.topnav {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-shadow: none !important;
+  }
+
+  nav.topnav ul {
+    background-color: lightgray;
+  }
+
+  nav.topnav div#collapsibleNavbar ul li{
+    border-bottom: 1px solid grey;
+    text-align: center;
+  }
+
+  nav.topnav div#collapsibleNavbar ul li a{
+    color: black !important;
+  }
+
+  nav.topnav div#collapsibleNavbar ul li a.active, nav.topnav div#collapsibleNavbar ul li a:hover{
+    color: purple !important;
+    border-bottom: none !important;
+  }
+
+
+
+
+  nav.topnav button.sm-menu {
+    background-color: #4285f6;
+    color: white;
+  }
+}
+/* small screen for footer */
+@media (max-width: 991px) {
+  footer h4 {
+    margin: 20px 0 10px;
+  }
+}
+
+
+
+/* Miracle css start here */
+
+
+  /* text color on the landing
+  */
+  .color{
+    color:#9d9c9d;
+
+  }
+
+
+  /* for links button
+  */
+  a{
+    text-decoration: none !important;
+
+  }
+  .Latest{
+    width: 150px !important;
+  }
+
+
+  /* for smallscreen
+  */
+  @media (max-width: 991px) {
+    .smallscreen{
+    font-size: 30px !important;
+    width: 50rem !important;
+
+    }
+    .about{
+      margin-top: 700vh !important;
+    }
+    .contact{
+      margin-top: 70vh !important ;
+    }
+
+    /* for card margintop
+    */
+    .margintop{
+      margin-top: 30px !important;
+    }
+
+
+    /* modal for small screen
+    */
+    .mimi_model{
+      font-size: 30px !important;
+    }
+
+    .text-vision{
+    margin-top: 50vh;
+    }
+    .vision{
+      height: 150vh!important;
+    }
+    .box-move{
+      margin-top: 20px;
+    }
+    .information{
+      margin-top: 20px!important;
+      margin-left: 0px !important;
+    }
+    footer{
+      margin-top: 50px !important;
+    }
+    .phone{
+      margin-left: 1px !important;
+    }
+
+    html{
+      scroll-behavior: smooth;
+
+    }
+    #contact{
+       height: 500px;
+    }
+    #event{
+       height: 860vh;
+    }
+    #about{
+       height: 500px;
+    }
+  }
+
+
+  /* landing page image
+  */
+  .tenimage{
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../../images/bg.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 40vh;
+
+  }
+
+  /* Miracle css stop here*/
+
+  /*about-page*/
+  .about{
+    margin-top: 400vh;
+  }
+  .about-image{
+    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../../images/pix2.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 60vh;
+  }
+  .vision{
+    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../../images/pix3.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 50vh;
+
+  }
+  .text-vision{
+    margin-top: 60vh !important;
+  }
+
+.box{
+  padding-top: 60px;
+  padding-bottom: 100px;
+  box-shadow: 20px 20px 20px white;
+  background-color: lightgray;
+}
+footer{
+  margin-top: 10vh;
+}
+
+.contact{
+  margin-top: 50vh;
+}
+.border1{
+  border-bottom: 1px solid lightgray;
+
+}
+input{
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 2px solid lightgray;
+  outline: none !important;
+}
+textarea{
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  outline: none !important;
+}
+.submit{
+  background-color: lightgray;
+}
