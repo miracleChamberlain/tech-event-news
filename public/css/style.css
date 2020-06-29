@@ -170,12 +170,19 @@ i.fa-instagram {
   */
   @media (max-width: 991px) {
     .smallscreen{
-    font-size: 30px !important;
+    font-size: 20px !important;
     width: 50rem !important;
 
     }
+    .hight-model{
+
+    }
+    .mode{
+      font-size: 10px !important;
+    }
+
     .about{
-      margin-top: 700vh !important;
+      margin-top: 200vh !important;
     }
     .contact{
       margin-top: 70vh !important ;
@@ -208,7 +215,7 @@ i.fa-instagram {
       margin-left: 0px !important;
     }
     footer{
-      margin-top: 50px !important;
+      margin-top: 100px !important;
     }
     .phone{
       margin-left: 1px !important;
