@@ -53,9 +53,9 @@ app.post("event", function (req,res) {
 
 
 });
-app.post("/", function (req,res) {
+app.post("/event.ejs", function (req,res) {
 	const techmodel = req.body.model
-	res.render("#contact")
+	res.render("event");
 });
 
 
