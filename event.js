@@ -9,6 +9,8 @@ const ejs = require('ejs');
 
 const app = express();
 
+app.set('view engine', 'ejs');
+
 
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static("public"));
@@ -27,17 +29,17 @@ const techeventSchema = new mongoose.Schema ({
 const Tech = mongoose.model("Tech", techeventSchema);
 
 const tech = new Tech({
-	fname:"Oracle",
-	email:"Miraclechamberlain120000@gmail.com",
-	message:"I have an offer for you"
+ fname:"Oracle",
+	 email:"Miraclechamberlain120000@gmail.com",
+	 message:"I have an offer for you"
 });
 
 
 app.get("/", function (req,res) {
-	res.sendFile(__dirname + "/event.html")
+	res.render("event")
 })
 
-app.post("/event.html", function (req,res) {
+app.post("event", function (req,res) {
 	const techName = req.body.fname
 	const techAddress = req.body.email
 	const techTellme = req.body.message
@@ -49,11 +51,14 @@ app.post("/event.html", function (req,res) {
 	 });
 	 tech.save();
 
+
 });
-app.post("/event.html", function (req,res) {
+app.post("/", function (req,res) {
 	const techmodel = req.body.model
-	res.redirect("/event.html");
+	res.render("#contact")
 });
+
+
 
 
 let port = process.env.PORT;

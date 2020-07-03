@@ -17,11 +17,12 @@
 
   </head>
     <body>
-    <form action="event.html" method="post">
+
+    <form action="event.ejs" method="post">
 
 
        <!-- This navbar houses everything at the top - the links, logo and the button and also the sm screen nav button -->
-<nav class="navbar navbar-expand-lg px-5 sticky-top topnav">
+<nav class="navbar navbar-expand-lg px-5 sticky-top  topnav">
 <a class="navbar-brand" href="#event">
 <img class="rounded-circle" src="images/eventlogo.png" alt="logo" width="100" height="60"> <span class="text-primary">Tech Event & News</span>
 </a>
@@ -60,23 +61,24 @@
       </section>
 <!-- event landing page stop here -->
 
-      <!-- event section one start  here -->
+
+
+<!-- event section one start  here -->
       <section class="container">
         <div class="row justify-content-between mt-5">
-          <div class="card smallscreen  " style="width: 20rem;">
+          <div class="card smallscreen cardmargin"  style="width: 20rem;">
             <a href=""data-toggle="modal" data-target="#event1">
-            <img class="card-img-top" src="/images/pix1.jpg">
+            <img class="card-img-top" src="/images/pix1.jpg" height="250px">
             <div class="card-body">
               <h4 class="card-title"><button type="button" class="btn btn-primary btn-sm">News Details</button></h4></a>
-              <div>
-                  <span class=" ml-3 mt-3 fa fa-calendar text-danger "></span>
-                  <span class="ml-2">Tuesday, 30 June 2020</span>
-                </div>
+
+                  <%- include("date") %>
+
                 <div class="text-justify mode mt-3">
                   <h5><b>Google Nest Hub Max now lets you make group video calls.</b></h5>
                 </div>
               <p class="card-text space mode text-justify mt-3 mb-0">
-              Video calling on the Google Nest Hub Max is no longer just a one-on-one deal, with Google announcing that group video calls via Google Duo and Google Meet are coming to the 10-inch smart display.
+              Video calling on the Google Nest Hub Max is no longer just a one-on-one deal.
               </p>
             </div>
         </div>
@@ -100,7 +102,7 @@
           </div>
             <div>
               <span class=" ml-3 mt-3 fa fa-calendar text-danger "></span>
-              <span class="ml-2">Tuesday, 30 June 2020</span>
+              <span class="ml-2">Friday, 3 July 2020</span>
             </div>
             <div class="text-justify mt-5">
               <h5><b>Google Nest Hub Max now lets you make group video calls.</b></h5>
@@ -123,6 +125,7 @@ While Google Meet calls on Google smart displays will be restricted to the Googl
         </div>
         </div>
         </div>
+      </div>
         </section>
 
         <!-- event section one end  here -->
@@ -134,21 +137,18 @@ While Google Meet calls on Google smart displays will be restricted to the Googl
 
           <!-- event section two start  here -->
 
-        <div class="card smallscreen margintop" style="width: 20rem;">
+        <div class="card smallscreen cardmargin margintop" style="width: 20rem;">
           <a href=""data-toggle="modal" data-target="#event2">
-            <img class="card-img-top" src="/images/pix2.jpg">
+            <img class="card-img-top" src="/images/pix2.jpg" height="250px">
             <div class="card-body  ">
               <h4 class="card-title"><button type="button" class="btn btn-primary btn-sm">News Details</button></h4></a>
-              <div>
-                  <span class=" ml-3 mt-3 fa fa-calendar text-danger "></span>
-                  <span class="ml-2">Tuesday, 30 June 2020</span>
-                </div>
+            <%- include("date") %>
                 <div class="text-justify  mode mt-2">
                   <h5><b> Environmentally conscious wireless earbuds with mediocre noise cancelling</b></h5>
                 </div>
 
               <p class="card-text space  mode text-justify mt-3 mb-0">
-                Will you be redeemed by wearing the Redemption ANC buds from the House of Marley? Likely not, but if you’re concerned about the usual Earth-unfriendly methods of making devices like this, you’ll probably at least walk away with a load off your conscience.
+                Will you be redeemed by wearing the Redemption ANC buds from the House of Marley? Likely not.
               </p>
             </div>
         </div>
@@ -173,7 +173,7 @@ While Google Meet calls on Google smart displays will be restricted to the Googl
           </div>
             <div>
               <span class=" ml-3 mt-3 fa fa-calendar text-danger "></span>
-              <span class="ml-2">Tuesday, 30 June 2020</span>
+              <span class="ml-2">Friday, 3 July 2020</span>
             </div>
             <div class="text-justify  mode mt-2">
               <h5><b>House of Marley Redemption ANC review: Environmentally conscious wireless earbuds with mediocre noise cancelling</b></h5>
@@ -207,21 +207,18 @@ It’s enough to make me think House of Marley designed these buds with the assu
 
         <!-- event section three start here -->
 
-        <div class="card smallscreen margintop" style="width: 20rem;">
+        <div class="card smallscreen cardmargin margintop" style="width: 20rem;">
           <a href=""data-toggle="modal" data-target="#event3">
-            <img class="card-img-top" src="/images/pix3.jpg">
+            <img class="card-img-top" src="/images/pix3.jpg" height="250px">
             <div class="card-body  ">
               <h4 class="card-title"><button type="button" class="btn btn-primary btn-sm">News Details</button></h4></a>
-              <div>
-                  <span class=" ml-3 mt-3 fa fa-calendar text-danger "></span>
-                  <span class="ml-2">Tuesday, 30 June 2020</span>
-                </div>
+            <%- include("date") %>
                 <div class="text-justify  mode mt-2">
                    <h5><b>Anker Soundcore Rave Neo review: Fat, punchy bass for the dance floor</b></h5>
                 </div>
 
               <p class="card-text space  mode text-justify mt-3 mb-0">
-                If you’re looking for speaker to a inspire wholesale shuffling at your next party, then Anker’s $99 Soundcore Rave Neo is just what you’re looking for. It’s loud with a tight, thumpy low end that will promote all sorts of rhythmic action and thoughts. (It had my roommate Bridget dancing in zero seconds flat).  </p>
+                If you’re looking for speaker to a inspire wholesale shuffling at your next party, then Anker’s $99 Soundcore Rave Neo is just what you’re looking for.  </p>
             </div>
         </div>
 
@@ -247,7 +244,7 @@ It’s enough to make me think House of Marley designed these buds with the assu
   </div>
     <div>
       <span class=" ml-3 mt-3 fa fa-calendar text-danger "></span>
-      <span class="ml-2">Tuesday, 30 June 2020</span>
+      <span class="ml-2">Friday, 3 July 2020</span>
     </div>
     <div class="text-justify  mode mt-2">
       <h5><b>Anker Soundcore Rave Neo review: Fat, punchy bass for the dance floor</b></h5>
@@ -279,28 +276,30 @@ It’s enough to make me think House of Marley designed these buds with the assu
 </div>
 </div>
 </section>
+</div>
 </section>
 
 <!-- event section three end here -->
 
+
+
+
+
 <!-- event section four start here -->
 <section class="container">
 <div class="row justify-content-between mt-5">
-  <div class="card smallscreen " style="width: 20rem;">
+  <div class="card smallscreen cardmargin" style="width: 20rem;">
     <a href=""data-toggle="modal" data-target="#event4">
-    <img class="card-img-top" src="/images/pix4.jpg">
+    <img class="card-img-top" src="/images/pix4.jpg" height="250px">
     <div class="card-body">
       <h4 class="card-title"><button type="button" class="btn btn-primary btn-sm">News Details</button></h4></a>
-      <div>
-          <span class=" ml-3 mt-3 fa fa-calendar text-danger "></span>
-          <span class="ml-2">Tuesday, 30 June 2020</span>
-        </div>
+    <%- include("date") %>
 
         <div class="text-justify mt-2">
           <h5><b>The ad hater's guide to cord-cutting</b></h5>
         </div>
       <p class="card-text space mode text-justify mt-3 mb-0">
-    For some cord-cutters, extricating themselves from cable isn’t just about a lower TV bill. It’s also about escaping from advertising, When you ditch cable or satellite TV, it’s possible to set up a plan in which you’ll never have to sit through commercial breaks again.</p>
+    For some cord-cutters, extricating themselves from cable isn’t just about a lower TV bill. It’s also about escaping from advertising, When you ditch cable or satellite TV.</p>
     </div>
 </div>
 
@@ -323,7 +322,7 @@ It’s enough to make me think House of Marley designed these buds with the assu
   </div>
     <div>
       <span class=" ml-3 mt-3 fa fa-calendar text-danger "></span>
-      <span class="ml-2">Tuesday, 30 June 2020</span>
+      <span class="ml-2">Friday, 3 July 2020</span>
     </div>
 
     <div class="text-justify mt-2">
@@ -351,21 +350,18 @@ It’s enough to make me think House of Marley designed these buds with the assu
 
 
 <!-- event section five start here -->
-<div class="card smallscreen margintop" style="width: 20rem;">
+<div class="card smallscreen cardmargin margintop" style="width: 20rem;">
   <a href=""data-toggle="modal" data-target="#event5">
-    <img class="card-img-top" src="/images/pix5.jpg">
+    <img class="card-img-top" src="/images/pix5.jpg" height="250px">
     <div class="card-body  ">
       <h4 class="card-title"><button type="button" class="btn btn-primary btn-sm">News Details</button></h4></a>
-      <div>
-          <span class=" ml-3 mt-3 fa fa-calendar text-danger "></span>
-          <span class="ml-2">Tuesday, 30 June 2020</span>
-        </div>
+      <%- include("date") %>
         <div class="text-justify mt-2">
           <h5><b>This Smart Home Camera Detects Everything.</b></h5>
         </div>
       <p class="card-text space mode text-justify mt-3 mb-0">
         Our verdict of the SimCam 1S Home Security Camera:
-  Easy to set up and with a wealth of AI features, the SimCam 1S also offers a nice trio of mounting options. If you're looking for am affordable smart home-integrated internal security camera, this is a good place to start.</p>
+  Easy to set up and with a wealth of AI features, the SimCam 1S also offers a nice trio of mounting options.</p>
     </div>
 </div>
 
@@ -388,7 +384,7 @@ It’s enough to make me think House of Marley designed these buds with the assu
   </div>
     <div>
       <span class=" ml-3 mt-3 fa fa-calendar text-danger "></span>
-      <span class="ml-2">Tuesday, 30 June 2020</span>
+      <span class="ml-2">Friday, 3 July 2020</span>
     </div>
 
     <div class="text-justify mt-2">
@@ -431,20 +427,20 @@ Easy to set up and with a wealth of AI features, the SimCam 1S also offers a nic
 
 <!-- event section six start here -->
 
-<div class="card smallscreen margintop" style="width: 20rem;">
+<div class="card smallscreen cardmargin margintop" style="width: 20rem;">
   <a href=""data-toggle="modal" data-target="#event6">
-    <img class="card-img-top" src="/images/pix6.jpg">
+    <img class="card-img-top" src="/images/pix6.jpg" height="250px">
     <div class="card-body  ">
       <h4 class="card-title"><button type="button" class="btn btn-primary btn-sm">News Details</button></h4></a>
       <div>
           <span class=" ml-3 mt-3 fa fa-calendar text-danger "></span>
-          <span class="ml-2">Tuesday, 30 June 2020</span>
+          <span class="ml-2">Friday, 3 July 2020</span>
         </div>
         <div class="text-justify mt-2">
           <h5><b>How to Find the Serial Number for Any Apple Device</b></h5>
         </div>
       <p class="card-text space mode text-justify mt-3 mb-0">
-       Every Apple product has a unique serial number that’s made up of a long string of numbers and letters. You often need this number to check your device’s warranty, schedule a repair, or make an insurance claim. Fortunately, there are usually a few different ways to find it.</p>
+       Every Apple product has a unique serial number that’s made up of a long string of numbers and letters. You often need this number to check your device’s warranty, schedule a repair, or make an insurance claim.</p>
        </div>
 </div>
 
@@ -469,7 +465,7 @@ Easy to set up and with a wealth of AI features, the SimCam 1S also offers a nic
   </div>
     <div>
       <span class=" ml-3 mt-3 fa fa-calendar text-danger "></span>
-      <span class="ml-2">Tuesday, 30 June 2020</span>
+      <span class="ml-2">Friday, 3 July 2020</span>
     </div>
     <div class="text-justify mt-2">
       <h5><b>How to Find the Serial Number for Any Apple Device</b></h5>
@@ -536,6 +532,7 @@ Easy to set up and with a wealth of AI features, the SimCam 1S also offers a nic
 </div>
 </div>
 </section>
+</div>
 </section>
 
 <!-- event section six end here -->
@@ -544,22 +541,20 @@ Easy to set up and with a wealth of AI features, the SimCam 1S also offers a nic
 <!-- event section seven start here -->
         <section class="container">
         <div class="row justify-content-between mt-5">
-          <div class="card smallscreen " style="width: 20rem;">
+          <div class="card smallscreen cardmargin" style="width: 20rem;">
             <a href=""data-toggle="modal" data-target="#event7">
-            <img class="card-img-top" src="/images/pix7.jpg">
+            <img class="card-img-top" src="/images/pix7.jpg" height="250px">
             <div class="card-body">
               <h4 class="card-title"><button type="button" class="btn btn-primary btn-sm ">News Details</button></h4></a>
               <div>
                   <span class=" ml-3 mt-3 fa fa-calendar text-danger "></span>
-                  <span class="ml-2">Tuesday, 30 June 2020</span>
+                  <span class="ml-2">Friday, 3 July June 2020</span>
                 </div>
                 <div class="text-justify mt-2">
                   <h5><b>AMD vs. NVIDIA GPUs on Linux: Which Should You Use?</b></h5>
                 </div>
               <p class="card-text space mode text-justify mt-3 mb-0">
-                When it comes to choosing a fast graphics card, there are two main options: AMD and Nvidia. There are several factors that set them apart. On Windows, speed is all that matters—Nvidia GPUs (graphical processing unit) tend to be faster than AMD. But on Linux, there are other things to keep in mind.
-
-But what should you choose for Linux—an AMD or Nvidia GPU?
+                When it comes to choosing a fast graphics card, there are two main options: AMD and Nvidia. There are several factors that set them apart.
                 </p>
             </div>
         </div>
@@ -584,7 +579,7 @@ But what should you choose for Linux—an AMD or Nvidia GPU?
           </div>
             <div>
               <span class=" ml-3 mt-3 fa fa-calendar text-danger "></span>
-              <span class="ml-2">Tuesday, 30 June 2020</span>
+              <span class="ml-2">Friday, 3 July 2020</span>
             </div>
             <div class="text-justify mt-2">
               <h5><b>AMD vs. NVIDIA GPUs on Linux: Which Should You Use?</b></h5>
@@ -640,21 +635,20 @@ But what should you choose for Linux—an AMD or Nvidia GPU?
 
 
         <!-- event section eight start here -->
-        <div class="card smallscreen margintop" style="width: 20rem;">
+        <div class="card smallscreen cardmargin margintop" style="width: 20rem;">
           <a href=""data-toggle="modal" data-target="#event8">
-            <img class="card-img-top" src="/images/pix8.jpg">
+            <img class="card-img-top" src="/images/pix8.jpg" height="250px">
             <div class="card-body  ">
               <h4 class="card-title"><button type="button" class="btn btn-primary btn-sm">News Details</button></h4></a>
               <div>
                   <span class=" ml-3 mt-3 fa fa-calendar text-danger "></span>
-                  <span class="ml-2">Tuesday, 30 June 2020</span>
+                  <span class="ml-2">Friday, 3 July 2020</span>
                 </div>
                 <div class="text-justify mt-2">
                   <h5><b>How to Record Your Screen and Stream With OBS Studio</b></h5>
                 </div>
               <p class="card-text mode  space text-justify mt-3 mb-0">
-              If you’re looking to record your screen or stream online, OBS Studio (formerly Open Broadcaster Software) is a great option. This tool makes it simple to capture screencasts, record your gameplay, stream to Twitch, and much more besides. To get started, you’ll want to download OBS Studio for Windows, macOS, or Linux. We’ll use the Windows version for this tutorial, but it’s similar across all platforms. </p>
-
+              If you’re looking to record your screen or stream online, OBS Studio (formerly Open Broadcaster Software) is a great option. This tool makes it simple to capture screencasts, record your gameplay, stream to Twitch, and much more besides. </p>
             </div>
         </div>
 
@@ -677,7 +671,7 @@ But what should you choose for Linux—an AMD or Nvidia GPU?
           </div>
             <div>
               <span class=" ml-3 mt-3 fa fa-calendar text-danger "></span>
-              <span class="ml-2">Tuesday, 30 June 2020</span>
+              <span class="ml-2">Friday, 3 July 2020</span>
             </div>
             <div class="text-justify mt-2">
               <h5><b>How to Record Your Screen and Stream With OBS Studio</b></h5>
@@ -720,21 +714,20 @@ But what should you choose for Linux—an AMD or Nvidia GPU?
         <!-- event section eight end here -->
 
         <!-- event section nine start here -->
-        <div class="card smallscreen margintop" style="width: 20rem;">
+        <div class="card smallscreen cardmargin margintop" style="width: 20rem;">
           <a href=""data-toggle="modal" data-target="#event9">
-            <img class="card-img-top" src="/images/pix9.jpg">
+            <img class="card-img-top" src="/images/pix9.jpg" height="250px">
             <div class="card-body  ">
               <h4 class="card-title"><button type="button" class="btn btn-primary btn-sm">News Details</button></h4></a>
               <div>
                   <span class=" ml-3 mt-3 fa fa-calendar text-danger "></span>
-                  <span class="ml-2">Tuesday, 30 June 2020</span>
+                  <span class="ml-2">Friday, 3 July 2020</span>
                 </div>
                 <div class="text-justify mt-2">
                     <h5><b>Zhiyun Smooth X Is the Best 2-Axis Gimbal Yet</b></h5>
                 </div>
               <p class="card-text mode  space text-justify mt-3 mb-0">
-            The latest smartphone cameras have reached the point where they can shoot some incredible 4K resolution 60FPS video given the right lighting conditions. Sadly, evolutionary upgrades to the shakey bags of flesh we use to hold those miniature cameras have not kept pace. That’s why everyone who is serious about taking videos on their smartphone needs a gimbal. The question is just which one to buy.</p>
-
+            The latest smartphone cameras have reached the point where they can shoot some incredible 4K resolution 60FPS video given the right lighting conditions. Sadly, evolutionary upgrades to the shakey bags of flesh we use to hold those miniature cameras have not kept pace.</p>
             </div>
         </div>
 
@@ -761,7 +754,7 @@ But what should you choose for Linux—an AMD or Nvidia GPU?
   </div>
     <div>
       <span class=" ml-3 mt-3 fa fa-calendar text-danger "></span>
-      <span class="ml-2">Tuesday, 30 June 2020</span>
+      <span class="ml-2">Friday, 3 July 2020</span>
     </div>
     <div class="mt-3 space mode text-justify">
       <p>The latest smartphone cameras have reached the point where they can shoot some incredible 4K resolution 60FPS video given the right lighting conditions. Sadly, evolutionary upgrades to the shakey bags of flesh we use to hold those miniature cameras have not kept pace. That’s why everyone who is serious about taking videos on their smartphone needs a gimbal. The question is just which one to buy</p>
@@ -801,79 +794,109 @@ But what should you choose for Linux—an AMD or Nvidia GPU?
 </div>
 </div>
 </section>
-</section>
+</div>
 </section>
 <!-- event section nine end here -->
 
+
 <!-- About-Page -->
 
-<section class="about"  id="about" >
-<div class="about-image">
-</div>
+<section  class="about mt-5"  id="about">
+  <div class="about-image">
+    </div>
+  </section>
 
-<section class="container-fluid ">
-<div class="row pb-5 justify-content-center ">
-<div class="col-sm-4 col-lg-4 mt-4">
-
+  <section class="container-fluid ">
+<div class="row  justify-content-center ">
+<div class="col-sm-4 col-lg-4">
 <div class="">
-  <h1 class="font-italic ml-5 mt-2"><b>Our Story</b></h1>
+  <h1 class="font-italic ml-5 "><b>Our Story</b></h1>
     <div class="mt">
-      <div class="mt-3 ">Founded over 1 year ago, we' ve grown a small team in Nigeria promoting young,<br>technologists and helping them through our platform <br>in technology and events.</div>
+      <div class="mt-3 text-justify ">Founded over 1 year ago, we' ve grown a small team in Nigeria promoting young,technologists and helping them through our platform in technology and events.
+      </div>
         </div>
   </div>
 </div>
-<div class="col-sm-4 col-lg-4 mt-5">
+
+<div class="col-sm-4 col-lg-4 ">
 <div class=" ml-3  ">
     <div class="mt-5">
-      <div class="mt-3 ">With our root custom system and experince<br> we promote technology in a high level by posting tech event, tech meet-up, tech breaking-news and</div>
-      <div class="mt-2">other related tech activities etc<br>we also support if we are been needed in any of the tech related and non-related event or meet-up </div>
-      <div class="mt-2">we invest our time in technology cause that is the key to the universe.</div>
-    </div>
-  </div>
-
-</div>
-</div>
-
-<section class="vision text-light d-flex justify-content-center align-items-center">
-<div class="container">
-<div class="d-flex justify-content-center">
-<h2 class=" mb-5	 text-vision">Our Vision</h2>
-</div>
-<section class="container-fluid ">
-<div class="row pb-5 justify-content-center ">
-  <div class="col-sm-3 col-lg-3 ml-3 box  mt-3 ">
-    <div class=" text-dark">
-      <h1 class="text-center">Partner</h1>
-      <div class="text-center">
-      <p>for disruptive tech business <br> where technology is the key<br> differentiator<p>
+      <div class="">
+        <p class="text-justify "> With our root custom system and experince we promote technology in a high level by posting tech event, tech meet-up, tech breaking-news and other related tech activities etc we also support if we are been needed in any of the tech related and non-related event or meet-up we invest our time in technology cause that is the key to the universe. </p>
       </div>
-    </div>
+      </div>
   </div>
 
-  <div class="col-sm-3 col-lg-3 ml-3 box mt-3  ">
-    <div class=" text-dark">
-      <h1 class="text-center">Champion</h1>
-      <div class="text-center">
+</div>
+</div>
+</section>
+
+<section class="mt-5">
+<div class="text-center">
+<h3 class="font-italic  "><b>Our Vision</b></h3>
+</div>
+<!-- partner start  here -->
+     <section class="container">
+       <div class="row justify-content-between mt-5">
+         <div class="card smallscreen cardmargin  margintop" style="width: 20rem;">
+           <img class="card-img-top" src="/images/partner.jpeg" height="220px">
+           <div class="card-body">
+             <h4 class="card-title text-secondary text-center">Partner</h4>
+
+             <div class="text-center">
+     <p>for disruptive tech business <br> where technology is the key<br> differentiator<p>
+     </div>
+
+           </div>
+       </div>
+       <!-- partner end  here -->
+
+
+
+
+
+
+         <!-- champion start  here -->
+
+       <div class="card smallscreen cardmargin margintop" style="width: 20rem;">
+           <img class="card-img-top" src="/images/champion.jpeg" height="220px">
+           <div class="card-body  ">
+             <h4 class="card-title text-secondary text-center">Champion</h4>
+             <div class="text-center">
       <p>For promoting young tech entrepreneur idea and<br> event<p>
       </div>
-    </div>
-  </div>
+           </div>
+       </div>
 
-  <div class="col-sm-3 col-lg-3 ml-3 box  mt-3">
-    <div class="  text-dark">
-      <h1 class="text-center">Home</h1>
-      <div class="text-center">
-      <p> passionate technologists<br>  to continually improve<br> from different people<p>
-      </div>
-    </div>
-  </div>
-  </div>
-  </section>
+
+
+         <!-- champion end here -->
+
+       <!-- home start here -->
+
+       <div class="card smallscreen  cardmargin margintop" style="width: 20rem;">
+           <img class="card-img-top" src="/images/home.jpeg" height="220px">
+           <div class="card-body  ">
+             <h4 class="card-title text-secondary text-center">Home</h4>
+             <div class="text-center">
+     <p> passionate technologists<br>  to continually improve<br> from different people<p>
+     </div>
+             </div>
+       </div>
+
+</section>
+
+<!-- home end here -->
 </section>
 
 
 
-<section id="contact" class="contact">
+
+<!-- About-Page end-->
+
+
+
+<section id="contact" class="contact mt-5">
   <section class="container-fluid ">
   <div class="row justify-content-center ">
     <div class="col-sm-3 col-lg-3  ">
@@ -893,9 +916,12 @@ But what should you choose for Linux—an AMD or Nvidia GPU?
    <label class="mt-3 ml-3">Message</label>
    <textarea class="form-control pb-0" name="message" id="message" placeholder="Enter message"></textarea>
  </div>
-  <button type="submit" class="btn btn-light submit"  data-toggle="modal" onclick="valad()"  data-target="">Submit</button>
+  <button type="submit" class="btn btn-light submit"  data-toggle="modal " onclick="valad()"  data-target="">Submit</button>
 
 </form>
+
+
+
 
 
 
@@ -924,7 +950,7 @@ But what should you choose for Linux—an AMD or Nvidia GPU?
     </div>
 
 <div class="col-sm-3 col-lg-3 ml-5 information">
-  <div class="information">
+  <div class="information mt-4">
     <h5>Contact Information</h5>
   </div>
   <div class="">
@@ -996,11 +1022,14 @@ But what should you choose for Linux—an AMD or Nvidia GPU?
 </div>
 
 
+
+
 <script src="event.js" charset="utf-8"></script>
 <script src="myScript.js" charset="utf-8"></script>
 <script src="jquery.js" charset="utf-8"></script>
 <script src="popper.min.js" charset="utf-8"></script>
 <script src="bootstrap.min.js" charset="utf-8"></script>
+
 </form>
   </body>
 </html>

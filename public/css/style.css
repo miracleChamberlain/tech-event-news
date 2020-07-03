@@ -32,7 +32,10 @@ a {
 }
 /* ..........  */
 
+/*navbar width*/
+.navbar{
 
+}
 
 
 /* The anchor(a) element was changed to black here because, my navbar has a white background
@@ -136,7 +139,7 @@ i.fa-instagram {
   }
 }
 /* small screen for footer */
-@media (max-width: 991px) {
+@media (max-width: 575px), (max-width: 991px) {
   footer h4 {
     margin: 20px 0 10px;
   }
@@ -144,7 +147,22 @@ i.fa-instagram {
 
 
 
-/* Miracle css start here */
+/* landing page image
+*/
+.tenimage{
+  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../../images/bg.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 50vh;
+
+}
+
+
+
+/*hight card */
+
+
 
 
   /* text color on the landing
@@ -174,24 +192,20 @@ i.fa-instagram {
     width: 50rem !important;
 
     }
-    .hight-model{
 
-    }
     .mode{
       font-size: 10px !important;
     }
 
-    .about{
-      margin-top: 200vh !important;
-    }
-    .contact{
-      margin-top: 70vh !important ;
-    }
 
     /* for card margintop
     */
     .margintop{
       margin-top: 30px !important;
+    }
+    .cardmargin{
+      margin-right: 10px !important;
+      margin-left: 10px !important;
     }
 
 
@@ -201,19 +215,8 @@ i.fa-instagram {
       font-size: 30px !important;
     }
 
-    .text-vision{
-    margin-top: 50vh;
-    }
-    .vision{
-      height: 150vh!important;
-    }
-    .box-move{
-      margin-top: 20px;
-    }
-    .information{
-      margin-top: 20px!important;
-      margin-left: 0px !important;
-    }
+
+    
     footer{
       margin-top: 100px !important;
     }
@@ -223,7 +226,6 @@ i.fa-instagram {
 
     html{
       scroll-behavior: smooth;
-
     }
     #contact{
        height: 500px;
@@ -237,54 +239,34 @@ i.fa-instagram {
   }
 
 
-  /* landing page image
-  */
-  .tenimage{
-    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../../images/bg.jpeg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 40vh;
-
-  }
 
   /* Miracle css stop here*/
 
   /*about-page*/
-  .about{
-    margin-top: 400vh;
-  }
   .about-image{
     background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../../images/pix2.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 60vh;
+    height: 70vh;
   }
   .vision{
     background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../../images/pix3.jpeg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment:fixed;
     background-size: cover;
-    height: 50vh;
+    background-position: center;
+    height: 70vh;
 
   }
-  .text-vision{
-    margin-top: 60vh !important;
-  }
 
-.box{
-  padding-top: 60px;
-  padding-bottom: 100px;
-  box-shadow: 20px 20px 20px white;
-  background-color: lightgray;
-}
+
+
 footer{
   margin-top: 10vh;
 }
 
-.contact{
-  margin-top: 50vh;
+
 }
 .border1{
   border-bottom: 1px solid lightgray;
