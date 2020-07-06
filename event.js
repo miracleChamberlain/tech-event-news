@@ -34,28 +34,30 @@ const tech = new Tech({
 	 message:"I have an offer for you"
 });
 
-
 app.get("/", function (req,res) {
 	res.render("event")
 })
 
-app.post("event", function (req,res) {
-	const techName = req.body.fname
-	const techAddress = req.body.email
-	const techTellme = req.body.message
+app.post("/event", function (req,res) {
+	const techName = req.body.fname;
+	const techAddress = req.body.email;
+	const techTellme = req.body.message;
 
-   const tech = new Tech({
-		 name:techName,
-		 email:techAddress,
-		 message:techTellme
-	 });
-	 tech.save();
+const tech= new Tech({
+	name:techName,
+	email:techAddress,
+	message:techTellme
 
+})
+tech.save();
 
 });
-app.post("/event.ejs", function (req,res) {
+
+
+
+
+app.post("/event", function (req,res) {
 	const techmodel = req.body.model
-	res.render("event");
 });
 
 
