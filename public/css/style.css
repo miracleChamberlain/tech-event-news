@@ -102,7 +102,10 @@ i.fa-instagram {
   padding: 10px;
 }
 /* .......... */
-
+.oldnews{
+  background-color: lightgray;
+  width: 100% !important;
+}
 
 /* Small Screen for navbar */
 @media (max-width: 575px), (max-width: 991px) {
@@ -216,7 +219,7 @@ i.fa-instagram {
     }
 
 
-    
+
     footer{
       margin-top: 100px !important;
     }
